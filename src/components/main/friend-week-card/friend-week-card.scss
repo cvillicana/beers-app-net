@@ -1,0 +1,20 @@
+@import '../../../index.scss';
+
+.container-card {
+    width: 99%;
+    background-color: $accent-color;
+    height: 350px;
+}
+
+.friend-name {
+    font-size: 2em;
+    color: $white-color;
+    font-weight: bold;
+    text-align: center;
+}
+
+.favorite-beer {
+    font-size: 1.5em;
+    color: $secondary-text-color;
+    text-align: center;
+}

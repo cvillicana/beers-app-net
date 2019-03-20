@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Titillium Web', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-top-15 {
+  padding-top: 15px;
+}
+
+$dark-primary-color: #303F9F;
+$light-primary-color: #C5CAE9;
+$primary-color: #3F51B5;
+$text-icons-color: #FFFFFF;
+$accent-color: #FFC107;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+$secondary-color: #7DE2D1;
+$background-color: #5a839e;
+$assent-color: #00f3ff;
+$black-color: #404142;
+$white-color: #eef4f7;
+$gray-color: #b5b7b8;
+$contrast-color: #fe1b4f;
+$title-color: #043c57;
+$green-color: #00ffaf;
