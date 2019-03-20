@@ -14,7 +14,7 @@ class Chronometer extends Component {
     }
 
     componentDidMount(){
-        this.intervalId = setInterval(this.timer.bind(this), 1000);
+        this.intervalId = setInterval(this.timer.bind(this), 100);
     }
 
     componentWillUnmount(){
