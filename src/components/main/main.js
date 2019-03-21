@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Fab } from "../shared-components/add-button/add-button";
 import './main.scss'
 
 // Components
@@ -17,6 +18,7 @@ class Main extends Component {
               <MainTitle title="Happy Thursday"/>
               <Chronometer dateLimit={4}/>
               <FriendWeekCard />
+              <Fab />
             </div>
         </div>
       </div>

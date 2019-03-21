@@ -1,0 +1,15 @@
+@import '../../../index.scss';
+// .chronometer {
+//     font-size: 2em;
+//     text-align: center;
+//     font-weight: bold;
+//     color: $light-primary-color;
+//     margin: 30px;
+// }
+.fab {
+    text-align: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 4px, rgba(0, 0, 0, 0.28) 0px 4px 8px;
+    color: $white-color;
+    background: linear-gradient( 45deg, $fab-primary-color, $fab-secondary-color)
+}
