@@ -1,7 +1,7 @@
 import React from 'react';
 import './loading-spinner.scss';
 
-const LoadingSpinner = ({friend}) => (
+const LoadingSpinner = () => (
     <div className="loading">
         <div className="loader"></div>
     </div>
