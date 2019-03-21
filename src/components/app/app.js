@@ -5,7 +5,6 @@ import './app.scss'
 
 // Components
 import NavBar from './nav-bar/nav-bar';
-// Components
 import { Main } from '../main/main.js';
 import { Friends } from '../friends/friends.js';
 
