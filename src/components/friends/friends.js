@@ -4,8 +4,8 @@ import './friends.scss'
 import ModalFriend from '../shared-components/modal/modal.js'
 
 class Friends extends Component {
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
     
         this.handleShow = this.handleShow.bind(this);
     

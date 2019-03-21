@@ -2,8 +2,8 @@ import React from 'react';
 import { Modal, Button, Image } from 'react-bootstrap';
 
 class ModalFriend extends React.Component {
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
       show: false,
