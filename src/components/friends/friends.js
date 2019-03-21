@@ -1,68 +1,23 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { friendActions } from "../../_actions/friend.actions";
 import FriendCard from '../shared-components/friend-card/friend-card.js';
 import './friends.scss'
 
 class Friends extends Component {
 
+    componentDidMount(){
+      this.props.dispatch(friendActions.getFriends())
+    }
   render() {
 
-    let friends = [
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-        {
-            "image":"https://i.imgflip.com/1ekvvz.jpg",
-            "name": "Darth Vader"
-        },
-    ]
+    let friends = this.props.friends.all;
+    if(!friends || friends.length === 0){
+        return (<p>Loading</p>)
+    }
 
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="row justify-content-around justify-content-xs-center align-items-center">
          {/* Another Component */}
                 {
@@ -79,4 +34,11 @@ class Friends extends Component {
   }
 }
 
-export default Friends;
+const mapStateToProps = state => {
+    return {
+      friends: state.friends
+    };
+};
+  
+const connectedFriendsPage = connect(mapStateToProps)(Friends);
+export { connectedFriendsPage as Friends };

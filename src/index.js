@@ -4,10 +4,15 @@ import App from './components/app/app';
 import * as serviceWorker from './serviceWorker';
 import './index.scss'
 
+import { Provider } from 'react-redux';
+import { store } from './_helpers/store';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 render((
-    <App />
+    <Provider store={store}>
+        <App />
+    </Provider>
 ), document.getElementById('root'));
 
 serviceWorker.unregister();
