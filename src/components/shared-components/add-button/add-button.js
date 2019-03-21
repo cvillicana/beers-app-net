@@ -1,17 +1,21 @@
 import React from 'react';
 import './add-button.scss'
 
-const FABs = ({ onClick }) => (
-    <button className="add-button" onClick={onClick} />
+const AddButton = ({ onClick }) => (
+    <button className="fab" onClick={onClick}>
+        <i className="fa fa-plus" aria-hidden="true"></i>
+    </button>
 );
-export default FABs;
+export default AddButton;
 
 
-// function FAB(props) {
+/* SECOND OPTION */
+
+// function AddButton(props) {
 //     return (
-//         <button className="add-button" onClick={props.onClick}>
-//             {props.value}
+//         <button className="fab" onClick={props.onClick}>
+//             <i className="fa fa-plus" aria-hidden="true"></i>
 //         </button>
 //     );
 // }
-// export default FAB;
+// export default AddButton;

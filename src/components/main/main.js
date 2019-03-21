@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Fab } from "../shared-components/add-button/add-button";
 import './main.scss'
 
 // Components
@@ -14,12 +13,11 @@ class Main extends Component {
     return (
       <div className="container">
         <div className="row justify-content-center">
-            <div className="col-6">
-              <MainTitle title="Happy Thursday"/>
-              <Chronometer dateLimit={4}/>
-              <FriendWeekCard />
-              <Fab />
-            </div>
+          <div className="col-6">
+            <MainTitle title="Happy Thursday" />
+            <Chronometer dateLimit={4} />
+            <FriendWeekCard />
+          </div>
         </div>
       </div>
     );
