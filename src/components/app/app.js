@@ -5,6 +5,7 @@ import './app.scss'
 
 // Components
 import NavBar from './nav-bar/nav-bar';
+import Footer from './footer/footer';
 import { Main } from '../main/main.js';
 import { Friends } from '../friends/friends.js';
 
@@ -19,7 +20,8 @@ class App extends Component {
               <Route exact path='/' component={Main} />
 					    <Route exact path='/friends' component={Friends} />
             </Switch>
-				  </div>
+				  </div>  
+          <Footer />
 			  </Router>
       </div>
     );
