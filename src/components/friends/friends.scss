@@ -1,3 +1,6 @@
-.container {
+@import '../../index.scss';
+
+.container-fluid {
+    background-color: $primary-color;
     padding-top: 20px;
 }
