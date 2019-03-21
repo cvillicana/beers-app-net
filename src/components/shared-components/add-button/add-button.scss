@@ -1,0 +1,19 @@
+@import '../../../index.scss';
+
+.fab {
+    z-index: 1;
+    width: 4rem;
+    height: 4rem;
+    border-style: none;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 11%;
+    color: $white-color;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 0px 4px, rgba(0, 0, 0, 0.28) 0px 4px 8px;
+    background: linear-gradient( 45deg, rgb(214, 15, 15) 30%, rgb(255, 87, 0) 90%);
+}

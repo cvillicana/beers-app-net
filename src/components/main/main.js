@@ -13,11 +13,11 @@ class Main extends Component {
     return (
       <div className="container">
         <div className="row justify-content-center">
-            <div className="col-6">
-              <MainTitle title="Happy Thursday"/>
-              <Chronometer dateLimit={4}/>
-              <FriendWeekCard />
-            </div>
+          <div className="col-6">
+            <MainTitle title="Happy Thursday" />
+            <Chronometer dateLimit={4} />
+            <FriendWeekCard />
+          </div>
         </div>
       </div>
     );
