@@ -1,3 +1,3 @@
 export const myConfig = {
-    API_URL : "https://obgp2pffcf.execute-api.us-east-1.amazonaws.com/dev/"
+    API_URL : process.env.REACT_APP_API_URL
 }
